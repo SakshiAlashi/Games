@@ -259,14 +259,14 @@ def main_menu():
         print("2. Restart")
         print("3. Show Results / Stats")
         print("4. Enter any key to exit...")
-        choice = input("Enter your choice (1-4): ")
+        choice = int(input("Enter your choice (1-4): "))
        
-        if choice == "1":
+        if choice == 1:
             run_game()
-        elif choice == "2":
+        elif choice == 2:
             reset_stats()
             run_game()
-        elif choice == "3":
+        elif choice == 3:
             Show_stats()
         else:
             print("👋 Goodbye!")
